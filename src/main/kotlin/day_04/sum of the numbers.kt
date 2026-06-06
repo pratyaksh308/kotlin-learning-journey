@@ -1,3 +1,5 @@
+package day_04
+
 fun main() {
     println("Enter a number: ")
     val num = readln().toIntOrNull() ?: 0

@@ -1,3 +1,5 @@
+package day_04
+
 fun main() {
     var input: Int
 

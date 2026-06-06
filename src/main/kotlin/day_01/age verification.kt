@@ -1,3 +1,5 @@
+package day_01
+
 fun main() {
     println("Enter your age: ")
     val age = readln().toInt()

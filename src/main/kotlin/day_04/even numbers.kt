@@ -1,3 +1,5 @@
+package day_04
+
 fun main() {
 
     println("Even numbers from 2 t0 20: ")

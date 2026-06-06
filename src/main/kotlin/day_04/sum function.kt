@@ -1,4 +1,4 @@
-/*
+package day_04/*
 fun main () {
     println("Enter first number then second number: ")
     val num1 = readln().toIntOrNull() ?: 0

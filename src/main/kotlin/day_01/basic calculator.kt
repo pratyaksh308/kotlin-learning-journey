@@ -1,3 +1,5 @@
+package day_01
+
 fun main(){
     println("Enter first number: ")
     val a = readln().toInt()

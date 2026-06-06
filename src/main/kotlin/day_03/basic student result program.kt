@@ -1,3 +1,5 @@
+package day_03
+
 fun main () {
     println("Enter Name of the Student: ")
     val studentName = readln()

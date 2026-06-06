@@ -1,3 +1,5 @@
+package day_04
+
 fun main() {
     val pass = "gta123"
     var input =""

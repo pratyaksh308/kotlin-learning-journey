@@ -1,5 +1,7 @@
+package day_02
+
 fun main () {
-    val cars = arrayOf(
+    val cars = arrayOf (
         "Progen T20",
         "Benefactor Krieger",
         "Truffade Nero Custom",
@@ -7,7 +9,6 @@ fun main () {
         "Grotti Torrero XO"
     )
 
-    for (car in cars) {
-        println(car)
-    }
+    println(cars[0])
+    println(cars[4])
 }

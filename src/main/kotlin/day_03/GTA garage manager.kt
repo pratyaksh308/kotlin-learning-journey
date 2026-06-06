@@ -1,3 +1,5 @@
+package day_03
+
 fun main() {
     val cars = arrayOf(
         "Progen T20",

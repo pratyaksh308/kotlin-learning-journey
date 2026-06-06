@@ -1,3 +1,5 @@
+package day_02
+
 fun main () {
     val nums = intArrayOf(50, 200, 1234, 5678, 87)
 
