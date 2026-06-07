@@ -88,6 +88,7 @@ class GameCharacter (val name : String, var health : Int){
 
     fun attack(opponent: GameCharacter){
         println("\n>>> $name attacks ${opponent.name}!")
+        damageType(weaponPower)
         opponent.takeDamage(weaponPower)
     }
 
@@ -110,5 +111,10 @@ class GameCharacter (val name : String, var health : Int){
         health += 20
         if (health > 100) {health = 100}
         println("\n>>> $name heals for ${health - startingHealth} HP. Health is now $health")
+    }
+
+    val damageType = {weaponPower: Int ->
+        if (weaponPower > 40) println("Critical damage")
+        else println("Normal Hit")
     }
 }
