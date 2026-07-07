@@ -17,7 +17,7 @@ fun main() {
     println("Which car do you want?")
     val customersPreference = readln()
 
-    if(cars.any { it.equals(customersPreference, ignoreCase = true)}) println("We have that car available")
+    if(cars.any {it.equals(customersPreference, ignoreCase = true)}) println("We have that car available")
     else println("We dont have that car availabe OR try chekking the spelling")
 
 }
