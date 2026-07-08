@@ -1,65 +1,61 @@
 package day_07
 
 fun main() {
-    val michael = Michael()
-    michael.showInfo()
-    michael.name()
-    michael.health()
-    michael.specialAbility()
+    val characters: List<Character> = listOf(Michael(), Franklin(), Trevor())
 
-    val franklin = Franklin()
-    franklin.showInfo()
-    franklin.name()
-    franklin.health()
-    franklin.specialAbility()
-
-    val trevor = Trevor()
-    trevor.showInfo()
-    trevor.name()
-    trevor.health()
-    trevor.specialAbility()
+    for (character in characters) {
+        character.showInfo()
+        character.name()
+        character.health()
+        character.specialAbility()
+        println() 
+    }
 }
 
-abstract class Character{
-    open fun showInfo(){
+interface Character {
+    
+    // Interfaces can hold default functions, just like open functions
+    fun showInfo() {
         println("Here's the info of the character: ")
     }
-    abstract fun name()
-    abstract fun health()
+    
+    fun name()
+    fun health()
+    fun specialAbility()
 }
 
-class Michael : Character() {
+class Michael : Character {
     override fun name() {
         println("Name- Michael")
     }
     override fun health() {
         println("Health- 100")
     }
-    fun specialAbility() {
-        println("Special Ability- Bullet Time\n")
+    override fun specialAbility() {
+        println("Special Ability- Bullet Time")
     }
 }
 
-class Franklin : Character() {
+class Franklin : Character {
     override fun name() {
         println("Name- Franklin")
     }
     override fun health() {
         println("Health- 100")
     }
-    fun specialAbility() {
-        println("Special Ability- Driving Focus\n")
+    override fun specialAbility() {
+        println("Special Ability- Driving Focus")
     }
 }
 
-class Trevor : Character() {
+class Trevor : Character {
     override fun name() {
         println("Name- Trevor")
     }
     override fun health() {
         println("Health- 100")
     }
-    fun specialAbility() {
+    override fun specialAbility() {
         println("Special Ability- Rage Mist")
     }
 }
