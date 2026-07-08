@@ -13,12 +13,9 @@ fun main() {
 }
 
 interface Character {
-    
-    // Interfaces can hold default functions, just like open functions
     fun showInfo() {
         println("Here's the info of the character: ")
     }
-    
     fun name()
     fun health()
     fun specialAbility()
